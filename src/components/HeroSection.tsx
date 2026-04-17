@@ -121,10 +121,13 @@ export function HeroSection() {
       {/* Scroll indicator */}
       <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 12, 0] }}
+        animate={{ 
+          y: [0, 12, 0],
+          opacity: scrollY > 100 ? 0 : 1,
+        }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2 pointer-events-none">
           <p className="text-sm text-gray-500 dark:text-gray-400">Scroll</p>
           <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
