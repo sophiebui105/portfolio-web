@@ -7,9 +7,9 @@ export interface ContactInfo {
 }
 
 export const contactInfo: ContactInfo = {
-  location: 'New South Wales, Australia',
-  phone: '+61 490 331 146',
-  email: 'contact@example.com',
-  linkedin: 'https://linkedin.com/in/yourname',
-  github: 'https://github.com/yourname',
+  location: 'Perth, Australia',
+  phone: '+61 481 773 486',
+  email: 'thaophuong.bui105@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/buithaophuong/',
+  github: 'https://github.com/sophiebui105',
 };
